@@ -1,89 +1,402 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="zxx">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.9.3/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.3/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Phozogy Template">
+    <meta name="keywords" content="Phozogy, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CAFSIP | Template</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="img/favicon_t.png">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="nav-menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#">PHOTOGRAPHY</a>
+                                <ul class="dropdown">
+                                    <li><a href="./gallery.html">PORTFOLIO</a></li>
+                                    <li><a href="./portfolio-details.html">WEDDINGS</a></li>
+                                    <li><a href="./blog-details.html">COUPLE PORTRAITS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./about.html">PERSONAL</a></li>
+                            <!-- <li><a href="./services.html">Services</a></li>
+                            <li><a href="./pricing.html">Pricing</a></li> -->
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./portfolio.html">About</a></li>                                                   
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-search search-switch">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+    <!-- Hero Section Begin -->
+    <section class="hero-section">
+        <div class="hs-slider owl-carousel">
+            <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hs-text">
+                                <h2>Photography Studio</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et<br /> dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida accumsan lacus vel facilisis.</p>
+                                <a href="#" class="primary-btn">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hs-text">
+                                <h2>Photography Studio</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et<br /> dolore magna aliqua. Quis ipsum suspendisse ultrices
+                                    gravida accumsan lacus vel facilisis.</p>
+                                <a href="#" class="primary-btn">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services-item">
+                        <img src="img/services/service-1.jpg" alt="">
+                        <h3>Shooting</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services-item">
+                        <img src="img/services/service-2.jpg" alt="">
+                        <h3>Videos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services-item">
+                        <img src="img/services/service-3.jpg" alt="">
+                        <h3>Editing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="section-title">
+                        <h2>Categories</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br /> eiusmod tempor
+                            incididunt ut labore et dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="right-btn"><a href="#" class="primary-btn">VIew all</a></div>
+                </div>
+            </div>
+            <div class="categories-slider owl-carousel">
+                <div class="cs-item">
+                    <div class="cs-pic set-bg" data-setbg="img/categories/cat-1.jpg"></div>
+                    <div class="cs-text">
+                        <h4>Animal</h4>
+                        <span>120 pictures</span>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-pic set-bg" data-setbg="img/categories/cat-2.jpg"></div>
+                    <div class="cs-text">
+                        <h4>Natural</h4>
+                        <span>325 pictures</span>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-pic set-bg" data-setbg="img/categories/cat-3.jpg"></div>
+                    <div class="cs-text">
+                        <h4>Potrait</h4>
+                        <span>540 pictures</span>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-pic set-bg" data-setbg="img/categories/cat-4.jpg"></div>
+                    <div class="cs-text">
+                        <h4>Animal</h4>
+                        <span>120 pictures</span>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-pic set-bg" data-setbg="img/categories/cat-5.jpg"></div>
+                    <div class="cs-text">
+                        <h4>Animal</h4>
+                        <span>120 pictures</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Portfolio Section Begin -->
+    <section class="portfolio-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Our latest works</h2>
+                    </div>
+                    <div class="filter-controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".fashion">Fashion</li>
+                            <li data-filter=".lifestyle">Lifestyle</li>
+                            <li data-filter=".natural">Natural</li>
+                            <li data-filter=".wedding">Wedding</li>
+                            <li data-filter=".videos">Videos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 p-0">
+                    <div class="portfolio-filter">
+                        <div class="pf-item set-bg fashion" data-setbg="img/portfolio/pf-1.jpg">
+                            <a href="img/portfolio/pf-1.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item large-width large-height set-bg lifestyle"
+                            data-setbg="img/portfolio/pf-2.jpg">
+                            <a href="img/portfolio/pf-2.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item large-width set-bg natural" data-setbg="img/portfolio/pf-3.jpg">
+                            <a href="img/portfolio/pf-3.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item large-height set-bg wedding" data-setbg="img/portfolio/pf-4.jpg">
+                            <a href="img/portfolio/pf-4.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item set-bg lifestyle" data-setbg="img/portfolio/pf-7.jpg">
+                            <a href="img/portfolio/pf-7.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item set-bg natural" data-setbg="img/portfolio/pf-8.jpg">
+                            <a href="img/portfolio/pf-8.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item set-bg videos" data-setbg="img/portfolio/pf-5.jpg">
+                            <a href="img/portfolio/pf-5.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item set-bg fashion" data-setbg="img/portfolio/pf-6.jpg">
+                            <a href="img/portfolio/pf-6.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item large-width set-bg videos" data-setbg="img/portfolio/pf-10.jpg">
+                            <a href="img/portfolio/pf-10.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item set-bg fashion" data-setbg="img/portfolio/pf-11.jpg">
+                            <a href="img/portfolio/pf-11.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                        <div class="pf-item large-width large-height set-bg wedding"
+                            data-setbg="img/portfolio/pf-9.jpg">
+                            <a href="img/portfolio/pf-9.jpg" class="pf-icon image-popup"><span class="icon_plus"></span></a>
+                            <div class="pf-text">
+                                <h4>COLORS SPEAK</h4>
+                                <span>Fashion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="load-more-btn">
+            <a href="#">Load More</a>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-about">
+                        <div class="fa-logo">
+                            <a href="#">
+                                <img src="img/f-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.</p>
+                        <div class="fa-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Instagram</h5>
+                        <div class="fw-instagram">
+                            <img src="img/instagram/insta-1.jpg" alt="">
+                            <img src="img/instagram/insta-2.jpg" alt="">
+                            <img src="img/instagram/insta-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Quick links</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="fs-widget">
+                        <h5>Subscribe</h5>
+                        <p>Imolor amet consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="fw-subscribe">
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
